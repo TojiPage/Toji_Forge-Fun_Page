@@ -110,6 +110,19 @@ main {
     nav a {
         font-size: 16px;
     }
+
+    .home .submenu li {
+        border: 2px solid #000; /* Black border for each button in the sub-menu */
+    }
+
+    /* Update the button text for mobile view */
+    .home .submenu a:nth-child(4) {
+        content: "COLOR PICKER";
+    }
+
+    .home .submenu a:nth-child(5) {
+        content: "ABOUT";
+    }
 }
 
 /* Copyright Bar */
