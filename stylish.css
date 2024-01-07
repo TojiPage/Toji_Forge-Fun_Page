@@ -86,13 +86,25 @@ main {
 @media (max-width: 768px) {
     nav ul {
         display: flex;
-        flex-wrap: wrap; /* Allow items to wrap to the next line */
+        flex-direction: row; /* Ensure items are in a row */
         justify-content: center; /* Center items horizontally */
     }
 
     nav li {
         margin-right: 10px;
-        margin-bottom: 10px;
+    }
+
+    .submenu {
+        position: static; /* Reset position for sub-menu */
+        display: none;
+    }
+
+    nav a {
+        font-size: 16px; /* Adjust font size for mobile view if needed */
+    }
+
+    .home:hover .submenu {
+        display: none; /* Hide sub-menu on hover for mobile view */
     }
 }
 
