@@ -115,14 +115,12 @@ main {
     .home .submenu a:nth-child(5),
     .home .submenu a {
         content: " "; /* Make sure content is a space to ensure border rendering */
-        border: 2px solid #000; /* Black border for each button in the sub-menu */
+        border: 1px solid #000; /* Reduced border thickness */
         box-sizing: border-box; /* Ensure the border size is included in the total width/height */
-        border-width: 2px 1px; /* Border thickness - adjust as needed */
     }
 
-    /* Style specific to the "ICON CONVERTER" button */
-    .home .submenu a:nth-child(3) {
-        border-width: 4px 1px; /* Increase the border thickness for "ICON CONVERTER" */
+    .home .submenu a:nth-child(2) {
+        border: 2px solid #000; /* Use the thicker border for the "ICON CONVERTER" button */
     }
 }
 
