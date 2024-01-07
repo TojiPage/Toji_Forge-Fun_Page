@@ -1,0 +1,76 @@
+/* Font from Google Fonts (Poppins) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; /* Use Poppins as the default font */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.logo {
+    max-width: 200px; /* Adjust the size as needed */
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+nav a {
+    text-transform: uppercase; /* Make text uppercase */
+    font-weight: bold; /* Make text bold */
+    font-family: 'Poppins', sans-serif; /* Use Poppins as the font */
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+    position: relative;
+    transition: font-size 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    font-size: 20px;
+    color: #ff0000; /* Change text color to red on hover */
+}
+
+.home:hover .submenu {
+    display: block;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Copyright Bar */
+.copyright-bar {
+    background-color: #333; /* Same background color as the navigation bar */
+    color: #fff;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}

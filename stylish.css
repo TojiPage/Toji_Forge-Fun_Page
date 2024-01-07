@@ -58,7 +58,9 @@ nav a:hover {
 }
 
 .submenu li {
+    display: block;
     border: 2px solid #000; /* Black border for each button in the sub-menu */
+    margin: 0;
 }
 
 .submenu a {
@@ -76,7 +78,7 @@ nav a:hover {
     display: block;
 }
 
-.main-content {
+main {
     padding: 20px;
 }
 
@@ -96,14 +98,17 @@ nav a:hover {
     .submenu {
         position: static;
         display: none;
+        width: 100%; /* Make sub-menu take full width */
+    }
+
+    .home:hover .submenu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     nav a {
         font-size: 16px;
-    }
-
-    .home:hover .submenu {
-        display: block; /* Display the submenu on hover for mobile view */
     }
 }
 
