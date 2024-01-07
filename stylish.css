@@ -16,24 +16,6 @@ header {
     max-width: 200px; /* Adjust the size as needed */
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Cubano', sans-serif;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    position: relative;
-}
-
-.logo {
-    max-width: 200px; /* Adjust the size as needed */
-}
-
 nav {
     margin-top: 10px;
 }
@@ -129,15 +111,10 @@ main {
     }
 
     /* Update the button text for mobile view */
-    .home .submenu a:nth-child(4) {
-        content: "COLOR PICKER";
-    }
-
-    .home .submenu a:nth-child(5) {
-        content: "ABOUT";
-    }
-
-    .home .submenu li {
+    .home .submenu a:nth-child(4),
+    .home .submenu a:nth-child(5),
+    .home .submenu a {
+        content: " "; /* Make sure content is a space to ensure border rendering */
         border: 2px solid #000; /* Black border for each button in the sub-menu */
         box-sizing: border-box; /* Ensure the border size is included in the total width/height */
     }
