@@ -58,9 +58,7 @@ nav a:hover {
 }
 
 .submenu li {
-    display: block;
     border: 2px solid #000; /* Black border for each button in the sub-menu */
-    margin: 0;
 }
 
 .submenu a {
@@ -78,7 +76,7 @@ nav a:hover {
     display: block;
 }
 
-main {
+.main-content {
     padding: 20px;
 }
 
@@ -86,31 +84,32 @@ main {
 @media (max-width: 768px) {
     nav ul {
         display: flex;
-        flex-direction: row; /* Ensure items are in a row */
-        justify-content: center; /* Center items horizontally */
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     nav li {
         margin-right: 10px;
+        margin-bottom: 10px;
     }
 
     .submenu {
-        position: static; /* Reset position for sub-menu */
+        position: static;
         display: none;
     }
 
     nav a {
-        font-size: 16px; /* Adjust font size for mobile view if needed */
+        font-size: 16px;
     }
 
     .home:hover .submenu {
-        display: none; /* Hide sub-menu on hover for mobile view */
+        display: block; /* Display the submenu on hover for mobile view */
     }
 }
 
 /* Copyright Bar */
 .copyright-bar {
-    background-color: #333; /* Same background color as the navigation bar */
+    background-color: #333;
     color: #fff;
     padding: 5px;
     display: flex;
