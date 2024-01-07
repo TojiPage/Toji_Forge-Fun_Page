@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cubano', sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.logo {
+    max-width: 200px; /* Adjust the size as needed */
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+    border: 2px solid #000; /* Black border for each button */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+    position: relative;
+    transition: font-size 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    font-size: 20px;
+    color: #ff0000; /* Change text color to red on hover */
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333; /* Background color for sub-menu */
+    z-index: 1;
+}
+
+.submenu li {
+    display: block;
+    border: 2px solid #000; /* Black border for each button in the sub-menu */
+    margin: 0;
+}
+
+.submenu a {
+    display: block;
+    padding: 10px;
+    color: #ffd700; /* Yellow text color for sub-menu items */
+    text-decoration: none;
+}
+
+.submenu a:hover {
+    color: #ff0000; /* Change text color to red on hover */
+}
+
+.home:hover .submenu {
+    display: block;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* Copyright Bar */
+.copyright-bar {
+    background-color: #333; /* Same background color as the navigation bar */
+    color: #fff;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
