@@ -60,6 +60,7 @@ nav a:hover {
 .submenu li {
     display: block;
     margin: 0;
+    border: 2px solid #000; /* Black border for each button in the sub-menu */
 }
 
 .submenu a {
@@ -67,7 +68,6 @@ nav a:hover {
     padding: 10px;
     color: #ffd700; /* Yellow text color for sub-menu items */
     text-decoration: none;
-    border: 2px solid #000; /* Black border for each button in the sub-menu */
 }
 
 .submenu a:hover {
@@ -118,6 +118,10 @@ main {
 
     .home .submenu a:nth-child(5) {
         content: "ABOUT";
+    }
+
+    .home .submenu li {
+        border: 2px solid #000; /* Black border for each button in the sub-menu */
     }
 }
 
