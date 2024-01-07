@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylish.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="00.png"> <!-- Web icon -->
+    <script defer src="script.js"></script>
+    <title>TOJI FORGE - Icon Converter</title>
+</head>
+<body>
+    <header>
+        <img src="g.png" alt="TOJI FORGE Logo" class="logo">
+        <nav>
+            <ul>
+                <li class="home">
+                    <a href="#">HOME</a>
+                    <ul class="submenu">
+                        <li><a href="QR_Generator.html">QR GENERATOR</a></li>
+                        <li><a href="Icon_Converter.html">ICON CONVERTER</a></li>
+                        <li><a href="Draw_Pic.html">DRAW PIC</a></li>
+                        <li><a href="Color_Picker.html">COLOR PICKER</a></li> <!-- Added button -->
+                        <li><a href="About.html">ABOUT</a></li> <!-- Added button -->
+                    </ul>
+                </li>
+                <li><a href="#" onclick="confirmGoToMainPage()">MAIN PAGE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Your main content for Icon Converter goes here -->
+        <!-- You can add your own content or leave it empty -->
+    </main>
+
+    <div class="copyright-bar">
+        &copy; 2022 TOJI FORGE
+    </div>
+
+    <!-- JavaScript for confirmation -->
+    <script>
+        function confirmGoToMainPage() {
+            var confirmation = confirm("Do you want to go to the main page?");
+            if (confirmation) {
+                window.location.href = "index.html";
+            }
+        }
+    </script>
+</body>
+</html>
+
