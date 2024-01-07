@@ -1,7 +1,10 @@
+/* Font from Google Fonts (Poppins) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Cubano', sans-serif;
+    font-family: 'Poppins', sans-serif; /* Use Poppins as the default font */
 }
 
 header {
@@ -33,6 +36,9 @@ nav li {
 }
 
 nav a {
+    text-transform: uppercase; /* Make text uppercase */
+    font-weight: bold; /* Make text bold */
+    font-family: 'Poppins', sans-serif; /* Use Poppins as the font */
     color: #fff;
     text-decoration: none;
     font-size: 18px;
@@ -68,4 +74,3 @@ main {
     left: 0;
     width: 100%;
 }
-
