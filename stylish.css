@@ -117,6 +117,12 @@ main {
         content: " "; /* Make sure content is a space to ensure border rendering */
         border: 2px solid #000; /* Black border for each button in the sub-menu */
         box-sizing: border-box; /* Ensure the border size is included in the total width/height */
+        border-width: 2px 1px; /* Border thickness - adjust as needed */
+    }
+
+    /* Style specific to the "ICON CONVERTER" button */
+    .home .submenu a:nth-child(3) {
+        border-width: 4px 1px; /* Increase the border thickness for "ICON CONVERTER" */
     }
 }
 
